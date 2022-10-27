@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/62d7e7e21c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./public/image/bookshelf.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="./dist/main.js" defer></script>
+    <title>BookShelf App</title>
+</head>
+<body>
+      <app-nav></app-nav>
+      <div class="container d-flex flex-sm-wrap flex-wrap">
+        <div class="m-2 shadow p-5 bg-light rounded-3 flex-grow-1">
+              <form-app></form-app>
+          </div>          
+          <div class="m-2 shadow p-5 bg-light rounded-3 flex-grow-1">
+            <ikhtisar-app></ikhtisar-app>
+          </div>
+      </div>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-sm">
+            <div class="row">
+                <div class="mb-3 shadow-sm pt-3 pb-4 rounded-3 text-center">
+                    <search-app></search-app>
+                </div>
+            </div>
+            <div class="row shadow-sm p-3">
+                <div class="col-sm-6 border-dark">
+                    <h4 class="text-center text-primary">Uncomplete Shelf</h4>
+                    <div class="container pt-3" id="uncompleteShelf"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h4 class="text-center text-success">Complete Shelf</h4>
+                    <div class="container pt-3" id="completeShelf"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <modal-app></modal-app>
+</body>
+</html>
